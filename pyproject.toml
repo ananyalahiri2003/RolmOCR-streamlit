@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "RolmOCR-streamlit"
+version ="0.1.0"
+description = "A Streamlit OCR app with RolmOCR"
+authors = ["ananyalahiri2003 <ananyalahiri2003@yahoo.co.uk>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    {"include" = "src", from = "."}
+]
+
+[tool.poetry.dependencies]
+python          = ">3.10,<3.13"
+streamlit       = "^1.21.0"
+torch           = "2.2.1"
+accelerate      = "^0.21.0"
+transformers    = "4.48.2"
+huggingface-hub = ">=0.10.0,<1.0"
+Pillow          = "^10.0.0"
+python-dotenv   = "^1.0.0"
+pyngrok         = "^6.1.0"
+numpy           = ">=1.21,<2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
